@@ -1,0 +1,27 @@
+/* Make sure body allows scrolling */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;  /* enable vertical scroll */
+}
+
+/* Remove min-height: 100vh from App-header if it causes issues */
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */ /* Comment out or remove this */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* If you want the container in Home or main content to be scrollable */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow-y: auto;
+}
